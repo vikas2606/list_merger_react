@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/list_merger_react/static/css/main.5b22164c.css",
+    "main.js": "/list_merger_react/static/js/main.f3f65660.js",
+    "static/js/787.e189bbde.chunk.js": "/list_merger_react/static/js/787.e189bbde.chunk.js",
+    "static/media/logo.svg": "/list_merger_react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/list_merger_react/index.html",
+    "main.5b22164c.css.map": "/list_merger_react/static/css/main.5b22164c.css.map",
+    "main.f3f65660.js.map": "/list_merger_react/static/js/main.f3f65660.js.map",
+    "787.e189bbde.chunk.js.map": "/list_merger_react/static/js/787.e189bbde.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b22164c.css",
+    "static/js/main.f3f65660.js"
+  ]
+}
