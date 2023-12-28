@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
+import Home from './components/pages/Home';
+import { extendTheme } from "@chakra-ui/react";
+import GlobalStyles from './components/GlobalStyles';
+
+// Create a custom theme if needed
+const theme = extendTheme({
+  
+  // Your custom theme configuration goes here
+  components: {
+    
+    Button: {
+      baseStyle: {
+        bg: "blue.500", // Blue color
+        color: "white", // Text color
+      },
+      _hover: {
+        bg: "blue.600", // Hover color
+      },
+    },
+  },
+  
+});
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <ChakraProvider theme={theme}>  
+   <GlobalStyles/>
+    <Home/>
+   </ChakraProvider>
   );
 }
 
